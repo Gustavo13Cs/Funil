@@ -1,0 +1,45 @@
+﻿@model Funil.Models.VAGA
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar Vagas</h2>
+
+<div>
+    <form action="/Vagas/Edit?id=@Model.VAIID" method="post">
+        <label for="Nome">Nome</label>
+        <input type="text" class="form-control" maxlength="100" id="Nome" name="Nome" value=@Model.VAINOME required />
+
+        <div>
+            <label for="descricao">Descrição</label>
+            <input type="text" class="form-control" maxlength="100" id="descricao" name="descricao" value=@Model.VAIDESCRICAO required />
+
+        </div>
+
+        <div>
+            <label for="atribuicao">Atribuição</label>
+            <input type="text" class="form-control" id="atribuicao" name="atribuicao" value=@Model.VAIATRIBUICAO required />
+
+        </div>
+        <div>
+            <label for="salario">Salario</label>
+            <input type="text" class="form-control" id="salario" name="salario" value=@Model.VAISALARIO required />
+        </div>
+        <div>
+            <label for="requisito">Requisito</label>
+            <input type="text" class="form-control" id="requisito" name="requisito" value=@Model.VAIREQUISITO required />
+        </div>
+        <div>
+            <label for="cadastro">Data do Cadastro</label>
+            <input type="datetime" class="form-control" id="cadastro" name="cadastro" value=@Model.VAIDATACADASTRO required />
+        </div>
+        <br />
+        <div>
+            <a href="/Vagas/Index"> <button type="button" class="btn btn-primary">Voltar</button>  </a>
+            <button type="submit" class="btn btn-success">Salvar</button>
+        </div>
+
+    </form>
+
+</div>
+

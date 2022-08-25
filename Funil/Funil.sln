@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funil", "Funil\Funil.csproj", "{24856BC8-D117-47EB-9084-EB675F0A613D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INTELUTRADE_Teste", "INTELUTRADE_Teste\INTELUTRADE_Teste.csproj", "{FED0EC09-73E9-4DCF-BDC0-71A4F886C39B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24856BC8-D117-47EB-9084-EB675F0A613D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24856BC8-D117-47EB-9084-EB675F0A613D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24856BC8-D117-47EB-9084-EB675F0A613D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24856BC8-D117-47EB-9084-EB675F0A613D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED0EC09-73E9-4DCF-BDC0-71A4F886C39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED0EC09-73E9-4DCF-BDC0-71A4F886C39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED0EC09-73E9-4DCF-BDC0-71A4F886C39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED0EC09-73E9-4DCF-BDC0-71A4F886C39B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E78D5427-63B4-4C07-B3B8-704671A3F178}
+	EndGlobalSection
+EndGlobal

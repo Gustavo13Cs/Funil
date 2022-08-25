@@ -1,0 +1,47 @@
+﻿@model Funil.Models.VAGA
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluindos Vagas</h2>
+
+<div>
+    <form action="/Vagas/ExcluirConfirmar?id=@Model.VAIID" method="post">
+        <label>Nome</label>
+        <label>@Model.VAINOME</label>
+
+        <div>
+            <label>Descrição</label>
+            <label>@Model.VAIDESCRICAO</label>
+
+        </div>
+
+        <div>
+            <label>Atributos</label>
+            <label>@Model.VAIATRIBUICAO</label>
+
+        </div>
+
+        <div>
+            <label>Salario</label>
+            <label>@Model.VAISALARIO</label>
+        </div>
+        <div>
+            <label>Requisito</label>
+            <label>@Model.VAIREQUISITO</label>
+        </div>
+
+        <div>
+            <label>Data do Cadastro</label>
+            <label>@Model.VAIDATACADASTRO</label>
+        </div>
+
+        <div>
+            <a href="/Vagas/index"><button type="button" class="btn btn-primary">Voltar</button></a>
+            <a href="/Vagas/index"><button type="submit" class="btn btn-danger">Excluir</button> </a>
+        </div>
+
+    </form>
+
+</div>
+

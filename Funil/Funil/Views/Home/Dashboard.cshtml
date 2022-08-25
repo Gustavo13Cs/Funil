@@ -1,0 +1,22 @@
+﻿<link href="~/Content/Site.css" rel="stylesheet" />
+@model IEnumerable<Funil.Models.QtdCandidatoPorVaga>
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <a href="/Vagas/Candidatos?id=@item.CodVaga">
+            <div class="col-md-2 divCursoItemDashboard">
+                <div><h2> @item.Quantidade</h2></div>
+
+                <div>@item.Vaga</div>
+            </div>
+        </a>
+    }
+</div>
+
+

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Funil.Models.VAGA>
+@{
+    ViewBag.Title = "index";
+}
+
+<div>
+    <h2>
+        Lista De Vagas
+        <a href="/Vagas/Create">
+            <button type="button" class="btn btn-success">Novo</button>
+        </a>
+    </h2>
+</div>
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Atribuição</th>
+                <th scope="col">Salario</th>
+                <th scope="col">Requisitos</th>
+                <th scope="col">Data do Cadastro</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.VAIID</th>
+                    <td>@item.VAINOME</td>
+                    <td>@item.VAIDESCRICAO</td>
+                    <td>@item.VAIATRIBUICAO</td>
+                    <td>R$ @item.VAISALARIO</td>
+                    <td>@item.VAIREQUISITO</td>
+                    <td>@item.VAIDATACADASTRO</td>
+
+                    <td>
+                        <a class="btn btn-success" href="/Vagas/Candidatos?id=@item.VAIID">Cadidatos</a>
+                        <a href="/Vagas/Edit?id=@item.VAIID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/Vagas/Excluir?id=@item.VAIID"><button type="button" class="btn btn-danger">Excluir</button></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
